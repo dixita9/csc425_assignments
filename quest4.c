@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
+/*
 
+
+ There are different variants of exec() because they offer flexibility in how you pass arguments, set environment variables,
+ and search for the executable in the system's PATH. Different use cases may require different variants.
+
+*/
 int main() {
     pid_t pid = fork();
 
